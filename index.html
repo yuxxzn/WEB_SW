@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>기말 과제</title>
+</head>
+<body>
+  <div class="container">
+    <div class="memo-container">
+      <h1>my record</h1>
+      <div class="top">
+        <div>
+          <input type="text" id="memo-title-input" placeholder="제목을 입력하세요" class="memo-input">
+        </div>
+        <div>
+          <input type="text" id="memo-content-input" placeholder="내용을 입력하세요" class="memo-input-1">
+        </div>
+      </div>
+    </div>
+
+    <div class="middle">
+      <div>
+        <input type="file" id="memo-image-input" class="memo-input">
+      </div>
+      <div>
+        <button onclick="addMemo()">추가</button>
+      </div>
+    </div>
+
+      <div class="last">
+        <div>
+          <input type="text" id="search-input" placeholder="검색할 제목이나 내용을 입력하세요" class="memo-input">
+        </div>
+        <div>
+          <button onclick="searchMemos()">검색</button>
+        </div>
+      </div>
+
+      <div class="write">
+        <ul id="memo-list" class="memo-list"></ul>
+      </div>
+
+      <!-- 댓글 -->
+  <div id="lv-container" data-id="city" data-uid="MTAyMC81ODYwNC8zNTA2Ng==">
+    <script type="text/javascript">
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+
+        if (typeof LivereTower === 'function') { return; }
+
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+    </script>
+  <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+  </div>
+    </div>
+  </div>
+  <script src="project.js"></script>
+</body>
+</html>

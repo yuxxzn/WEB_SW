@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--black);
+  font-family: "Gowun Dodum", sans-serif;
+  font-size: 20px;
+}
+
+::selection {
+  background-color: var(--purple);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+}
+
+.container {
+  width: 540px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.memo-container {
+  width: inherit;
+  position: relative;
+
+}
+
+h1 {
+  position: relative;
+  top: 0;
+  margin: 30px;
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+}
+
+.memo-input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 10px 0;
+  width: 500px;
+  height: 40px;
+}
+
+.top{
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.top>div{
+  display: flex;
+  justify-content: center;
+}
+
+.top>input{
+  white-space:pre-line;
+  word-break:break-all;
+}
+
+.middle{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-bottom: 50px;
+}
+
+.middle>div{
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.middle>div>button{
+  padding: 10px 30px 10px 30px;
+}
+
+.middle>div>input{
+  width: 260px;
+}
+
+.last{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.last>div>input{
+  width: 435px;
+  margin-left: 20px;
+}
+
+.last>div>button{
+  padding: 6px;
+  margin-top: 10px;
+}
+
+.memo-input-1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 100px;
+}
+
+.memo-input input,
+.memo-input textarea {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--gray);
+  padding: 5px;
+}
+
+.memo-input input #memo-title-input {
+  padding-left: 150px;
+}
+
+.memo-input input #memo-content-input {
+  padding-left: 130px;
+}
+
+.memo-input textarea {
+  height: 5rem;
+}
+
+.memo-input input[type="file"] {
+  padding: 5px;
+}
+
+.memo-list {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.memo-list li{
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.memo-list li:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.memo-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.memo-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.memo-actions button {
+  padding: 5px 10px;
+  background-color: var(--gray);
+  border: none;
+  border-radius: 4px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.memo-actions button:hover {
+  background-color: var(--darkgray);
+}
+
+#search-input {
+  margin-right: 10px;
+}
+
+.write{
+  width: 500px;
+}
+
+.write>ul>li>h2{
+  font-size: 25px;
+  margin: 10px 0 5px 10px;
+}
+
+.write>ul>li>p{
+  margin-left: 10px;
+}
+
+.write>ul>li{
+  margin-bottom: 100px;
+}
+
+.write>ul>li>div>img{
+  min-width: 480px;
+  min-height: 480px;
+
+  margin-bottom: 10px;
+}
+
+.write>ul>li>div>button{
+  width: 100px;
+  margin: 0 0 10px 10px;
+}
+
+.write>ul>li>button{
+  display: inline-flex;
+  margin: 10px 0 10px 10px;
+  padding: 5px 93px 5px 93px;
+}
+
+#lv-container{
+  width: 500px;
+  display: inline-flex;
+  justify-content: flex-end;
+}
